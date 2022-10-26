@@ -43,10 +43,15 @@ public class App {
         List<String> array;
         String result,oracion;
         Scanner sr= new Scanner(System.in);
+        System.out.println("Ingrese una oracion");
         oracion= sr.nextLine();
         array = converPalabraTolist(oracion);
         array = invertir5PalAdelante(array);
         result= convertOracion(array);
         System.out.println(result);
+
+        System.out.println("*********************************************");
+        Persistencia aux= new Persistencia();
+        aux.numPersistencia();
     }
 }
